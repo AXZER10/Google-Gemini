@@ -1,10 +1,12 @@
   
 //   const apiKey = process.env.GEMINI_API_KEY;
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import Secrets from '../../Secrets.json';
+// import Secrets from '../../Secrets.json';
 
-  const apiKey = Secrets.API_KEY;
+  const apiKey = import.meta.env.VITE_API_KEY;
   const genAI = new GoogleGenerativeAI(apiKey);
+  console.log(apiKey)
+  console.log(import.meta.env.VITE_API_KEY)
   
   const model = genAI.getGenerativeModel({
     model: "gemini-2.0-flash-exp",
