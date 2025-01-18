@@ -1,4 +1,3 @@
-
 # Google Gemini Clone
 
 **Site Preview -** (https://google-gemini-axzer0.netlify.app)
